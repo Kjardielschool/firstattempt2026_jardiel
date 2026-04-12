@@ -1,4 +1,4 @@
-# YourLastName
+# Jardiel
 
 **Framework:** Svelte JS  
 **Module:** Module 2 – AdDU Alumni & Admin Web Application  
@@ -133,43 +133,41 @@ Model: Claude Sonnet (claude.ai web interface)
 
 ## 📸 Screenshots
 
-> *(Replace these with actual full-browser screenshots of your running app)*
+### Alumni Login
+![Alumni Login](screenshots/screenshots01-alumni-login.png)
 
-### Alumni Portal – Login
-![Alumni Login](screenshots/01-alumni-login.png)
+### Home Dashboard
+![Home Dashboard](screenshots/screenshots02-alumni-dashboard.png)
 
-### Alumni Portal – Dashboard
-![Dashboard](screenshots/02-alumni-dashboard.png)
+### Alumni Directory
+![Alumni Directory](screenshots/screenshots03-alumni-directory.png)
 
-### Alumni Portal – Directory
-![Directory](screenshots/03-alumni-directory.png)
+### Events Page
+![Events](screenshots/screenshots04-alumni-events.png)
 
-### Alumni Portal – Events
-![Events](screenshots/04-alumni-events.png)
+### Alumni Profile
+![Profile](screenshots/screenshots05-alumni-profile.png)
 
-### Alumni Portal – Profile
-![Profile](screenshots/05-alumni-profile.png)
+### Mentorship Hub
+![Mentorship Hub](screenshots/screenshots06-alumni-mentorship.png)
 
-### Alumni Portal – Mentorship Hub
-![Mentorship](screenshots/06-alumni-mentorship.png)
+### Alumni Verification (Registration)
+![Verify](screenshots/screenshots07-alumni-verify.png)
 
-### Alumni Portal – Verification (Step 1)
-![Verify Step 1](screenshots/07-alumni-verify.png)
+### Admin Login
+![Admin Login](screenshots/screenshots08-admin-login.png)
 
-### Admin Portal – Login
-![Admin Login](screenshots/08-admin-login.png)
+### Admin Command Center
+![Admin Dashboard](screenshots/screenshots09-admin-dashboard.png)
 
-### Admin Portal – Dashboard
-![Admin Dashboard](screenshots/09-admin-dashboard.png)
+### Admin Verification Queue
+![Admin Verification](screenshots/screenshots10-admin-verification.png)
 
-### Admin Portal – Verification Queue
-![Admin Verification](screenshots/10-admin-verification.png)
+### Admin Event Manager
+![Admin Events](screenshots/screenshots11-admin-events.png)
 
-### Admin Portal – Event Management
-![Admin Events](screenshots/11-admin-events.png)
-
-### Admin Portal – Reports & Analytics
-![Admin Reports](screenshots/12-admin-reports.png)
+### Admin Reports & Analytics
+![Admin Reports](screenshots/screenshots12-admin-reports.png)
 
 ---
 
