@@ -51,17 +51,15 @@ A web application for the **Ateneo de Davao University (AdDU) Alumni Association
 ### Step 1 – Clone the Repository
 
 ```bash
-git clone https://github.com/YOURUSERNAME/firstattempt2026_yourlastname.git
+git clone https://github.com/Kjardielschool/firstattempt2026_jardiel
 ```
-
-> Replace `YOURUSERNAME` and `yourlastname` with your actual GitHub username and last name.
 
 ---
 
 ### Step 2 – Navigate Into the Project Folder
 
 ```bash
-cd firstattempt2026_yourlastname
+cd firstattempt2026_jardiel
 ```
 
 ---
