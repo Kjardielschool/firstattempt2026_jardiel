@@ -5,4 +5,10 @@ const app = new App({
   props: { url: window.location.pathname }
 })
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+
 export default app
