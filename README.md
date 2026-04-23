@@ -127,23 +127,6 @@ Model: Claude Sonnet (claude.ai web interface)
 ### Key Prompt That Generated the Full Project
 > "I am building a Svelte JS web application for the AdDU (Ateneo de Davao University) Alumni Association using svelte-routing for navigation. Build me the complete [PAGE NAME] page with these features: [description of features from design]. Use navy blue #1a237e as the primary color and gold #ffd700 as the accent. All navigation should use the navigate() function from svelte-routing. Write it as a single .svelte file with <script>, HTML template, and <style> sections. Match the mobile-first layout of the design mockup."
 
-## AI Log
-
-### Master Prompt
-"I have a Svelte and Vite project called the AdDU Alumni Portal. 
-Help me convert it into a PWA with a valid manifest.json using 
-AdDU university branding, a service worker with offline caching, 
-and proper icon management."
-
-### Errors & Hallucinations Fixed Manually
-1. AI gave a Linux terminal command (cat > file << EOF) that 
-   does not work on Windows PowerShell — had to use VS Code to 
-   write the file manually instead.
-2. manifest.json was created empty — had to manually paste 
-   content into VS Code and save.
-3. Icons folder did not exist — had to manually create 
-   public/icons/ and copy the AdDU logo PNG into it.
-
 ---
 
 ## 📸 Screenshots
@@ -223,3 +206,57 @@ src/
         ├── AdminEvents.svelte
         └── AdminReports.svelte
 ```
+
+
+# AdDU Alumni Portal — PWA Conversion
+
+## Activity 15: Progressive Web Application
+
+### Branch: `feature/pwa-ready`
+
+---
+
+## Master Prompt
+
+> "I have a Svelte and Vite project called the AdDU Alumni Portal.
+> Help me convert it into a PWA. I need a valid manifest.json with
+> Ateneo de Davao University branding, a service worker with
+> cache-first offline caching strategy, and proper icon management
+> using the existing logo assets."
+
+---
+
+## PWA Files Added
+
+- `public/manifest.json` — App identity, branding, icons
+- `public/sw.js` — Service worker with install, activate, fetch events
+- `public/icons/icon-192.png` — PWA icon (192x192)
+- `public/icons/icon-512.png` — PWA icon (512x512)
+- `index.html` — Added manifest link tag and theme-color meta
+- `src/main.js` — Added service worker registration
+
+---
+
+## AI Hallucinations & Errors Fixed Manually
+
+1. **Linux command on Windows** — AI gave `cat > file << EOF` 
+   which does not work in PowerShell. Fixed by editing the file 
+   directly in VS Code.
+
+2. **Empty manifest.json** — File was created but saved empty. 
+   Fixed by manually pasting JSON content in VS Code.
+
+3. **Empty sw.js** — Service worker file was created but had no 
+   content, causing the offline test to fail with a dino page. 
+   Fixed by rewriting the entire file with proper install, 
+   activate, and fetch event handlers.
+
+4. **Double dot in icon filename** — Icon was saved as 
+   `icon-512..png` instead of `icon-512.png`, preventing the 
+   install button from appearing. Fixed by creating a correctly 
+   named copy.
+
+5. **Broken cache from empty sw.js** — The empty service worker 
+   cached broken files, causing a white screen and MIME type 
+   errors. Fixed by clearing all site data in Chrome DevTools 
+   and rebuilding.
