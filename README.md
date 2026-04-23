@@ -127,6 +127,23 @@ Model: Claude Sonnet (claude.ai web interface)
 ### Key Prompt That Generated the Full Project
 > "I am building a Svelte JS web application for the AdDU (Ateneo de Davao University) Alumni Association using svelte-routing for navigation. Build me the complete [PAGE NAME] page with these features: [description of features from design]. Use navy blue #1a237e as the primary color and gold #ffd700 as the accent. All navigation should use the navigate() function from svelte-routing. Write it as a single .svelte file with <script>, HTML template, and <style> sections. Match the mobile-first layout of the design mockup."
 
+## AI Log
+
+### Master Prompt
+"I have a Svelte and Vite project called the AdDU Alumni Portal. 
+Help me convert it into a PWA with a valid manifest.json using 
+AdDU university branding, a service worker with offline caching, 
+and proper icon management."
+
+### Errors & Hallucinations Fixed Manually
+1. AI gave a Linux terminal command (cat > file << EOF) that 
+   does not work on Windows PowerShell — had to use VS Code to 
+   write the file manually instead.
+2. manifest.json was created empty — had to manually paste 
+   content into VS Code and save.
+3. Icons folder did not exist — had to manually create 
+   public/icons/ and copy the AdDU logo PNG into it.
+
 ---
 
 ## 📸 Screenshots
